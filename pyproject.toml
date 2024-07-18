@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "django-presigned-url"
+version = "0.0.0"
+description = "Generate presigned urls for django"
+homepage = "https://github.com/projectcaluma/django-presigned-url"
+repository = "https://github.com/projectcaluma/django-presigned-url"
+documentation = "https://github.com/projectcaluma/django-presigned-url/README.md"
+authors = ["Adfinis <info@adfinis.com>"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+include = ["CHANGELOG.md"]
+exclude = ["**/tests"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+django = ">=4.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "0.5.2"
+mypy = "1.10.1"
+django-stubs = { extras = ["compatible-mypy"], version = "5.0.2" }
+freezegun = "1.5.1"
+pytest = "8.2.2"
+
+[tool.ruff]
+exclude = ["migrations", "snapshots", ".venv"]
+line-length = 88
+
+[tool.ruff.lint]
+ignore = [
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D106",
+    "D107",
+    "D202",
+    "E501",
+    "D212", # Multi-line docstring summary should start at the first line
+    "D213", # Multi-line docstring summary should start at the second line
+    "D407", # Missing dashed underline after section
+    "D406", # Section name should end with a newline
+    "D203", # one-blank-line-before-class (docstring)
+]
+select = ["C9", "D", "E", "F", "W", "I"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 11
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
