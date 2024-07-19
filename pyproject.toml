@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-presigned-url"
-version = "0.0.0"
+version = "0.1.0"
 description = "Generate presigned urls for django"
 homepage = "https://github.com/projectcaluma/django-presigned-url"
 repository = "https://github.com/projectcaluma/django-presigned-url"
