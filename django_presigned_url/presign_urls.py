@@ -9,6 +9,10 @@ from django.utils.http import urlsafe_base64_encode
 from django.utils.translation import gettext
 
 
+def get_scheme(request: HttpRequest) -> str:
+    return request.scheme if request.scheme else "http"
+
+
 def make_signature_components(
     path: str,
     hostname: str,
@@ -66,7 +70,7 @@ def make_presigned_url(path: str, request: HttpRequest) -> str:
     url, expires, signature = make_signature_components(
         path,
         request.get_host(),
-        scheme=request.META.get("wsgi.url_scheme", "http"),
+        scheme=get_scheme(request),
     )
 
     return f"{url}?expires={expires}&signature={signature}"
@@ -79,7 +83,7 @@ def verify_presigned_request(path: str, request: HttpRequest) -> bool:
             path=path,
             hostname=request.get_host(),
             expires=int(request.GET.get("expires", "-1")),
-            scheme=request.META.get("wsgi.url_scheme", "http"),
+            scheme=get_scheme(request),
             token_sig=token_sig,
         )
 
