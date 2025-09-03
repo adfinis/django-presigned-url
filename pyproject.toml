@@ -2,9 +2,9 @@
 name = "django-presigned-url"
 version = "0.1.1"
 description = "Generate presigned urls for django"
-homepage = "https://github.com/projectcaluma/django-presigned-url"
-repository = "https://github.com/projectcaluma/django-presigned-url"
-documentation = "https://github.com/projectcaluma/django-presigned-url/README.md"
+homepage = "https://github.com/adfinis/django-presigned-url"
+repository = "https://github.com/adfinis/django-presigned-url"
+documentation = "https://github.com/adfinis/django-presigned-url/README.md"
 authors = ["Adfinis <info@adfinis.com>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"
