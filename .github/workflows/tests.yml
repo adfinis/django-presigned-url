@@ -23,7 +23,7 @@ jobs:
       ENV: dev
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Install poetry
         run: pipx install poetry
@@ -52,7 +52,7 @@ jobs:
       ENV: dev
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Install poetry
         run: pipx install poetry
