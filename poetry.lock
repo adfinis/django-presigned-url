@@ -802,18 +802,18 @@ yaml = ["PyYaml (>=6.0.1)"]
 
 [[package]]
 name = "python-semantic-release"
-version = "9.21.0"
+version = "10.5.3"
 description = "Automatic Semantic Versioning for Python projects"
 optional = false
-python-versions = ">=3.8"
+python-versions = "~=3.8"
 groups = ["dev"]
 files = [
-    {file = "python_semantic_release-9.21.0-py3-none-any.whl", hash = "sha256:1ecf9753283835f1c6cda4702e419d9702863a51b03fa11955429139234f063c"},
-    {file = "python_semantic_release-9.21.0.tar.gz", hash = "sha256:d8673d25cab2acdfeb34f791e271bb8a02ecc63650c5aa5c03d520ddf0cbe887"},
+    {file = "python_semantic_release-10.5.3-py3-none-any.whl", hash = "sha256:1be0e07c36fa1f1ec9da4f438c1f6bbd7bc10eb0d6ac0089b0643103708c2823"},
+    {file = "python_semantic_release-10.5.3.tar.gz", hash = "sha256:de4da78635fa666e5774caaca2be32063cae72431eb75e2ac23b9f2dfd190785"},
 ]
 
 [package.dependencies]
-click = ">=8.0,<9.0"
+click = ">=8.1.0,<8.2.0"
 click-option-group = ">=0.5,<1.0"
 Deprecated = ">=1.2,<2.0"
 dotty-dict = ">=1.3,<2.0"
@@ -821,18 +821,18 @@ gitpython = ">=3.0,<4.0"
 importlib-resources = ">=6.0,<7.0"
 jinja2 = ">=3.1,<4.0"
 pydantic = ">=2.0,<3.0"
-python-gitlab = ">=4.0,<5.0"
+python-gitlab = ">=4.0.0,<7.0.0"
 requests = ">=2.25,<3.0"
-rich = ">=13.0,<14.0"
+rich = ">=14.0,<15.0"
 shellingham = ">=1.5,<2.0"
-tomlkit = ">=0.11,<1.0"
+tomlkit = ">=0.13.0,<0.14.0"
 
 [package.extras]
-build = ["build (>=1.2,<2.0)"]
-dev = ["pre-commit (>=3.5,<4.0)", "ruff (==0.6.1)", "tox (>=4.11,<5.0)"]
-docs = ["Sphinx (>=6.0,<7.0)", "furo (>=2024.1,<2025.0)", "sphinx-autobuild (==2024.2.4)", "sphinxcontrib-apidoc (==0.5.0)"]
-mypy = ["mypy (==1.15.0)", "types-Deprecated (>=1.2,<2.0)", "types-pyyaml (>=6.0,<7.0)", "types-requests (>=2.32.0,<2.33.0)"]
-test = ["coverage[toml] (>=7.0,<8.0)", "filelock (>=3.15,<4.0)", "flatdict (>=4.0,<5.0)", "freezegun (>=1.5,<2.0)", "pytest (>=8.3,<9.0)", "pytest-clarity (>=1.0,<2.0)", "pytest-cov (>=5.0,<6.0)", "pytest-env (>=1.0,<2.0)", "pytest-lazy-fixtures (>=1.1.1,<1.2.0)", "pytest-mock (>=3.0,<4.0)", "pytest-order (>=1.3,<2.0)", "pytest-pretty (>=1.2,<2.0)", "pytest-xdist (>=3.0,<4.0)", "pyyaml (>=6.0,<7.0)", "requests-mock (>=1.10,<2.0)", "responses (>=0.25.0,<0.26.0)"]
+build = ["build (>=1.2,<2.0)", "tomlkit (>=0.13.0,<0.14.0)"]
+dev = ["pre-commit (>=4.3,<5.0)", "ruff (==0.6.1)", "tox (>=4.11,<5.0)"]
+docs = ["Sphinx (>=7.4,<8.0)", "furo (>=2025.9,<2026.0)", "sphinx-autobuild (==2024.2.4)", "sphinxcontrib-apidoc (==0.6.0)"]
+mypy = ["mypy (==1.16.1)", "types-Deprecated (>=1.2,<2.0)", "types-pyyaml (>=6.0,<7.0)", "types-requests (>=2.32.0,<2.33.0)"]
+test = ["coverage[toml] (>=7.0,<8.0)", "filelock (>=3.15,<4.0)", "flatdict (>=4.0,<5.0)", "freezegun (>=1.5,<2.0)", "pytest (>=8.3,<9.0)", "pytest-clarity (>=1.0,<2.0)", "pytest-cov (>=5.0.0,<8.0.0)", "pytest-env (>=1.0,<2.0)", "pytest-lazy-fixtures (>=1.4,<2.0)", "pytest-mock (>=3.0,<4.0)", "pytest-order (>=1.3,<2.0)", "pytest-pretty (>=1.2,<2.0)", "pytest-xdist (>=3.0,<4.0)", "pyyaml (>=6.0,<7.0)", "requests-mock (>=1.10,<2.0)", "responses (>=0.25.0,<0.26.0)"]
 
 [[package]]
 name = "requests"
@@ -873,14 +873,14 @@ requests = ">=2.0.1,<3.0.0"
 
 [[package]]
 name = "rich"
-version = "13.7.1"
+version = "14.3.4"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
 optional = false
-python-versions = ">=3.7.0"
+python-versions = ">=3.8.0"
 groups = ["dev"]
 files = [
-    {file = "rich-13.7.1-py3-none-any.whl", hash = "sha256:4edbae314f59eb482f54e9e30bf00d33350aaa94f4bfcd4e9e3110e64d0d7222"},
-    {file = "rich-13.7.1.tar.gz", hash = "sha256:9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"},
+    {file = "rich-14.3.4-py3-none-any.whl", hash = "sha256:07e7adb4690f68864777b1450859253bed81a99a31ac321ac1817b2313558952"},
+    {file = "rich-14.3.4.tar.gz", hash = "sha256:817e02727f2b25b40ef56f5aa2217f400c8489f79ca8f46ea2b70dd5e14558a9"},
 ]
 
 [package.dependencies]
@@ -1143,4 +1143,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "a901ce1ad2a73d488f0d1b22ef67b5e84bd3ee7faf7dd5767b3c6858ca8d194e"
+content-hash = "45f59ee16c5eb5dca3bae700e8730a98fc9ff6bec2973679ac5535638cfea98b"
